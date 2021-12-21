@@ -58,7 +58,6 @@
 		83DE82252771D64600AFE54A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		83DE82272771D93F00AFE54A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83DE822A2771DB4900AFE54A /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
-		83DE822C2771DBF100AFE54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83DE822D2771F87C00AFE54A /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +110,6 @@
 		83142EF22768B44300C87E15 /* GridApp */ = {
 			isa = PBXGroup;
 			children = (
-				83DE822C2771DBF100AFE54A /* Info.plist */,
 				83DE82292771DB2600AFE54A /* Managers */,
 				83DE82242771D60F00AFE54A /* Views */,
 				83DE821F2771D36800AFE54A /* Components */,
