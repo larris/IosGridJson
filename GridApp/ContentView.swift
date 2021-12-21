@@ -10,7 +10,6 @@ import Kingfisher
 
 
 struct ContentView: View {
-    
     @ObservedObject var vm = GridviewModel()
     @State var searchText = ""
     @State var isSearching = false
@@ -42,7 +41,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-            ContentView().colorScheme(ColorScheme.dark)
         }
     }
 }
@@ -73,34 +71,34 @@ struct SearchBar: View {
     
     var body: some View {
         HStack {
-            HStack{
-                TextField("Search terms here", text: $searchText)
-                    .padding(.leading,24)
-            }
-            .padding()
-            .background(Color(.systemGray5))
-            .cornerRadius(10)
-            .padding(.horizontal)
-            .onTapGesture {
-                isSearching = true
-            }
-            .overlay {
-                HStack {
-                    Image(systemName: "magnifyingglass")
-                    Spacer()
-                    if isSearching {
-                        Button {
-                            searchText = ""
-                        } label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .padding(.vertical)
+                HStack{
+                    TextField("Search terms here", text: $searchText)
+                        .padding(.leading,24)
+                }
+                .padding()
+                .background(Color(.systemGray5))
+                .cornerRadius(10)
+                .padding(.horizontal)
+                .onTapGesture {
+                    isSearching = true
+                }
+                .overlay {
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                        Spacer()
+                        if isSearching {
+                            Button {
+                                searchText = ""
+                            } label: {
+                                Image(systemName: "xmark.circle.fill")
+                                    .padding(.vertical)
+                            }
+                            
                         }
                         
-                    }
-                    
-                }.padding(.horizontal,32)
-                    .foregroundColor(.gray)
-            }
+                    }.padding(.horizontal,32)
+                        .foregroundColor(.gray)
+                }
             
             if isSearching {
                 Button {
