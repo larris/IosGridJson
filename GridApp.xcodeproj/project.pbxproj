@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83142EF42768B44300C87E15 /* GridAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142EF32768B44300C87E15 /* GridAppApp.swift */; };
-		83142EF62768B44300C87E15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142EF52768B44300C87E15 /* ContentView.swift */; };
+		83142EF62768B44300C87E15 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142EF52768B44300C87E15 /* GridView.swift */; };
 		83142EF82768B44700C87E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83142EF72768B44700C87E15 /* Assets.xcassets */; };
 		83142EFB2768B44700C87E15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83142EFA2768B44700C87E15 /* Preview Assets.xcassets */; };
 		83142F052768B44800C87E15 /* GridAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142F042768B44800C87E15 /* GridAppTests.swift */; };
@@ -16,6 +16,12 @@
 		83142F112768B44800C87E15 /* GridAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142F102768B44800C87E15 /* GridAppUITestsLaunchTests.swift */; };
 		83142F1E2768D96800C87E15 /* JsonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142F1D2768D96800C87E15 /* JsonController.swift */; };
 		83142F2127690FD700C87E15 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 83142F2027690FD700C87E15 /* Kingfisher */; };
+		83DE82212771D3A200AFE54A /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE82202771D3A200AFE54A /* Title.swift */; };
+		83DE82232771D47600AFE54A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE82222771D47600AFE54A /* PrimaryButton.swift */; };
+		83DE82262771D64600AFE54A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE82252771D64600AFE54A /* LoginView.swift */; };
+		83DE82282771D93F00AFE54A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE82272771D93F00AFE54A /* ContentView.swift */; };
+		83DE822B2771DB4900AFE54A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE822A2771DB4900AFE54A /* AuthenticationManager.swift */; };
+		83DE822E2771F87C00AFE54A /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE822D2771F87C00AFE54A /* CredentialsLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 /* Begin PBXFileReference section */
 		83142EF02768B44300C87E15 /* GridApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83142EF32768B44300C87E15 /* GridAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAppApp.swift; sourceTree = "<group>"; };
-		83142EF52768B44300C87E15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83142EF52768B44300C87E15 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		83142EF72768B44700C87E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83142EFA2768B44700C87E15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83142F002768B44800C87E15 /* GridAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +53,13 @@
 		83142F0E2768B44800C87E15 /* GridAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAppUITests.swift; sourceTree = "<group>"; };
 		83142F102768B44800C87E15 /* GridAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		83142F1D2768D96800C87E15 /* JsonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonController.swift; sourceTree = "<group>"; };
+		83DE82202771D3A200AFE54A /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		83DE82222771D47600AFE54A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		83DE82252771D64600AFE54A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		83DE82272771D93F00AFE54A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83DE822A2771DB4900AFE54A /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		83DE822C2771DBF100AFE54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83DE822D2771F87C00AFE54A /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +111,14 @@
 		83142EF22768B44300C87E15 /* GridApp */ = {
 			isa = PBXGroup;
 			children = (
+				83DE822C2771DBF100AFE54A /* Info.plist */,
+				83DE82292771DB2600AFE54A /* Managers */,
+				83DE82242771D60F00AFE54A /* Views */,
+				83DE821F2771D36800AFE54A /* Components */,
+				83DE821E2771D2FD00AFE54A /* Controllers */,
 				83142EF32768B44300C87E15 /* GridAppApp.swift */,
-				83142EF52768B44300C87E15 /* ContentView.swift */,
 				83142EF72768B44700C87E15 /* Assets.xcassets */,
 				83142EF92768B44700C87E15 /* Preview Content */,
-				83142F1D2768D96800C87E15 /* JsonController.swift */,
 			);
 			path = GridApp;
 			sourceTree = "<group>";
@@ -130,6 +146,42 @@
 				83142F102768B44800C87E15 /* GridAppUITestsLaunchTests.swift */,
 			);
 			path = GridAppUITests;
+			sourceTree = "<group>";
+		};
+		83DE821E2771D2FD00AFE54A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83142F1D2768D96800C87E15 /* JsonController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		83DE821F2771D36800AFE54A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				83DE82202771D3A200AFE54A /* Title.swift */,
+				83DE82222771D47600AFE54A /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		83DE82242771D60F00AFE54A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83DE82272771D93F00AFE54A /* ContentView.swift */,
+				83DE82252771D64600AFE54A /* LoginView.swift */,
+				83DE822D2771F87C00AFE54A /* CredentialsLoginView.swift */,
+				83142EF52768B44300C87E15 /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83DE82292771DB2600AFE54A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				83DE822A2771DB4900AFE54A /* AuthenticationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83142EF62768B44300C87E15 /* ContentView.swift in Sources */,
+				83DE82262771D64600AFE54A /* LoginView.swift in Sources */,
+				83DE822B2771DB4900AFE54A /* AuthenticationManager.swift in Sources */,
+				83DE82212771D3A200AFE54A /* Title.swift in Sources */,
+				83DE82282771D93F00AFE54A /* ContentView.swift in Sources */,
+				83142EF62768B44300C87E15 /* GridView.swift in Sources */,
+				83DE82232771D47600AFE54A /* PrimaryButton.swift in Sources */,
 				83142EF42768B44300C87E15 /* GridAppApp.swift in Sources */,
 				83142F1E2768D96800C87E15 /* JsonController.swift in Sources */,
+				83DE822E2771F87C00AFE54A /* CredentialsLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +491,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GridApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GridApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow faceID login to the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +523,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GridApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GridApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow faceID login to the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

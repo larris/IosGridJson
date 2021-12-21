@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 
-struct ContentView: View {
+struct GridView: View {
     @ObservedObject var vm = GridviewModel()
     @State var searchText = ""
     @State var isSearching = false
@@ -17,30 +17,34 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                //Search bar
-                SearchBar(searchText: $searchText, isSearching: $isSearching)
-            
-                //Grid
-                LazyVGrid(columns: [
-                    GridItem(.flexible(minimum: 100, maximum: 200),spacing: 12,alignment: .top),
-                    GridItem(.flexible(minimum: 100, maximum: 200),spacing: 12,alignment: .top),
-                    GridItem(.flexible(minimum: 100, maximum: 200),alignment: .top),
-                ],  spacing: 12,  content: {
-                    ForEach((vm.results).filter({"\($0)".contains(searchText) || searchText.isEmpty}), id: \.self){ rs in
-                        GridViewArtists(rs: rs)
-                    }
-                    
-                }).padding(.horizontal,12)
-            }.navigationTitle("Search")
+            VStack {
+                ScrollView {
+                    //Search bar
+                    SearchBar(searchText: $searchText, isSearching: $isSearching)
+                
+                    //Grid
+                    LazyVGrid(columns: [
+                        GridItem(.flexible(minimum: 100, maximum: 200),spacing: 12,alignment: .top),
+                        GridItem(.flexible(minimum: 100, maximum: 200),spacing: 12,alignment: .top),
+                        GridItem(.flexible(minimum: 100, maximum: 200),alignment: .top),
+                    ],  spacing: 12,  content: {
+                        ForEach((vm.results).filter({"\($0)".contains(searchText) || searchText.isEmpty}), id: \.self){ rs in
+                            GridViewArtists(rs: rs)
+                        }
+                        
+                    }).padding(.horizontal,12)
+                }.navigationTitle("Search")
+             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(LinearGradient(colors: [.blue,.purple], startPoint: .topLeading, endPoint: .bottomTrailing))
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GridView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            GridView()
         }
     }
 }
@@ -59,9 +63,9 @@ struct GridViewArtists: View {
                 .font(.system(size:9,weight: .regular))
             Text(rs.releaseDate)
                 .font(.system(size: 9,weight:.regular))
-                .foregroundColor(.gray)
         }
         .padding(.horizontal)
+
     }
 }
 
